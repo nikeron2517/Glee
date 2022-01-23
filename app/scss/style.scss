@@ -4,6 +4,136 @@
 @import 'global';
 
 
+.header{
+   &__top{
+      @extend %rubik-500;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px 0;
+   }
+   a{
+      color: #436372;
+   }
+}
+
+.logo{
+   display: flex;
+   &__img{
+      margin-right: 15px;
+   }
+   &__name{
+      font-size: 36px;
+      line-height: 58px;
+   }
+}
+
+.menu{
+   &__list{
+      display: flex;
+   }
+   &__list-item + &__list-item{
+      margin-left: 30px;
+   }
+   &__list-link{
+      font-size: 15px;
+      line-height: 12px;
+   }
+}
+
+.nav-users{
+   display: flex;
+   &__search{
+      background-color: #edf1f4;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      margin-right: 20px;
+      position: relative;
+   }
+   &__search-img{
+      position: absolute;
+      top: 33%;
+      left: 35%;
+   }
+
+   &__favourites{
+      background-color: #fcd7b6;
+      border-radius: 45% 0 0 45%;
+      width: 92px;
+      height: 52px;
+      position: relative;
+   }
+   &__favourites-img{
+      position: absolute;
+      top: 41%;
+      right: 25%;
+   }
+   &__favourites::after{
+      content: url(../images/users-decor.svg);
+      position: absolute;
+      top: 25%;
+      right: 0;
+   }
+
+      &__cart{
+         background-color: #fcd7b6;
+         margin-right: 20px;
+         border-radius: 0 45% 45% 0;
+         width: 92px;
+         height: 52px;
+         position: relative;
+      }
+      &__cart-img{
+         position: absolute;
+         top: 41%;
+         left: 25%;
+      }
+      
+      &__others{
+         background-color: #a3bbc8;
+         border-radius: 50%;
+         width: 50px;
+         height: 50px;
+         position: relative;
+      }
+      &__others-img{
+         position: absolute;
+         top: 30%;
+         right: 30%;
+      }
+      &__num-cart,
+      &__num-favourites{
+         position: absolute;
+         @extend %dmsans-400;
+         font-size: 10px;
+         line-height: 16px;
+         text-align: center;
+         background-color: #fff;
+         width: 16px;
+         height: 16px;
+         border-radius: 50%;
+      }
+      &__num-favourites{
+         top: 25%;
+         right: 15%;
+      }
+
+      &__num-cart{
+         top: 25%;
+         right: 45%;
+      }
+   }
+
+
+
+
+
+
+
+
+
+
 
 
 
