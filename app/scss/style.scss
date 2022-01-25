@@ -4,6 +4,223 @@
 @import 'global';
 
 
+.header{
+   &__top{
+      @extend %rubik-500;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px 0;
+   }
+   a{
+      color: #436372;
+   }
+}
+
+.logo{
+   display: flex;
+   &__img{
+      margin-right: 15px;
+   }
+   &__name{
+      font-size: 36px;
+      line-height: 58px;
+   }
+}
+
+.menu{
+   &__list{
+      display: flex;
+   }
+   &__list-item + &__list-item{
+      margin-left: 30px;
+   }
+   &__list-link{
+      font-size: 15px;
+      line-height: 12px;
+   }
+}
+
+.nav-users{
+   display: flex;
+   &__search{
+      background-color: #edf1f4;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      margin-right: 20px;
+      position: relative;
+   }
+   &__search-img{
+      position: absolute;
+      top: 33%;
+      left: 35%;
+   }
+
+   &__favourites{
+      background-color: #fcd7b6;
+      border-radius: 45% 0 0 45%;
+      width: 92px;
+      height: 52px;
+      position: relative;
+   }
+   &__favourites-img{
+      position: absolute;
+      top: 41%;
+      right: 25%;
+   }
+   &__favourites::after{
+      content: url(../images/users-decor.svg);
+      position: absolute;
+      top: 25%;
+      right: 0;
+   }
+
+      &__cart{
+         background-color: #fcd7b6;
+         margin-right: 20px;
+         border-radius: 0 45% 45% 0;
+         width: 92px;
+         height: 52px;
+         position: relative;
+      }
+      &__cart-img{
+         position: absolute;
+         top: 41%;
+         left: 25%;
+      }
+      
+      &__others{
+         background-color: #a3bbc8;
+         border-radius: 50%;
+         width: 50px;
+         height: 50px;
+         position: relative;
+      }
+      &__others-img{
+         position: absolute;
+         top: 30%;
+         right: 30%;
+      }
+      &__num-cart,
+      &__num-favourites{
+         position: absolute;
+         @extend %dmsans-400;
+         font-size: 10px;
+         line-height: 16px;
+         text-align: center;
+         background-color: #fff;
+         width: 16px;
+         height: 16px;
+         border-radius: 50%;
+      }
+      &__num-favourites{
+         top: 25%;
+         right: 15%;
+      }
+
+      &__num-cart{
+         top: 25%;
+         right: 45%;
+      }
+   }
+
+   .footer {
+      @extend %rubik-400;
+      padding: 75px 0 35px;
+      font-size: 14px;
+      line-height: 32px;
+      a{
+         color: $default;
+      }
+   }
+  
+   .footer-top {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 60px;
+      border-bottom: 1px solid #dae4e9;
+      &__logo{
+         margin-bottom: 10px;
+      }
+      &__name{
+         color: #436372;
+      }
+      &__contact{
+         text-transform: uppercase;
+      }
+      &__item-form{
+         max-width: 280px;
+      }
+      &__text{
+         margin-bottom: 35px;
+      }
+      &__title{
+         color: $footer-c;
+         @extend %dmsans-700;
+         text-transform: uppercase;
+         margin-bottom: 10px;
+         margin-top: 15px;
+      }
+      &__item-contacts{
+         max-width: 200px;
+      }
+      &__address,
+      &__phone{
+         margin-bottom: 10px;
+      }
+      &__item{
+         max-width: 150px;
+         margin: 0 20px;
+      }
+      &__form{
+         @extend %dmsans-400;
+      }
+      &__form-input{
+         max-width: 170px;
+         width: 100%;
+         background-color: #fef7f0;
+         padding: 10px 0 10px 10px;
+      }
+      &__form-input::placeholder{
+            color: #234969;
+      }
+      &__form-btn{
+         background-color:#a3bbc8;
+         color: #fff;
+         padding: 10px 15px;
+      }
+   }
+   .footer-bottom{
+      display: flex;
+      justify-content: space-between;
+      height: 90px;
+      align-items: center;
+      font-size: 14px;
+      line-height: 20px;
+      &__list{
+         display: flex;
+      }
+      &__item{
+         padding: 0 10px;
+      }
+      &__item + &__item{
+         border-left: 1px solid $default;
+      }
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
