@@ -27,4 +27,9 @@ body{
 
 .title{
    color: $title;
+   @extend %dmsans-700;
+   font-size: 36px;
+   line-height: 44px;
+   text-align: center;
+
 }
