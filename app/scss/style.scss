@@ -772,8 +772,80 @@
    }
 }
 
+.login{
+   padding: 115px 0;
+}
+.form-login{
+   @extend %rubik-400;
+   margin: 0 auto;
+   max-width: 470px;
+   width: 100%;
+   font-size: 14px;
+   line-height: 24px;
+   &__label{
+      display: block;
+      color: $accent;
+      margin-bottom: 26px;
+   }
+   &__input{
+      display: block;
+      width: 100%;
+      height: 60px;
+      margin-top: 14px;
+      border: 2px solid #f6f6f6;    
+      padding: 0 15px;
+   }
+   &__btn{
+      height: 60px;
+      width: 100%;
+      @extend %rubik-500;
+      font-size: 18px;
+      line-height: 22px;
+      color: #fff;
+      background-color: #a3bbc8;
+   }
+   &__box{
+      padding: 30px 0;
+      display: flex;
+      justify-content: space-between;
+      color: $accent;
+      border-bottom: 1px solid #f6f6f6;
+      margin-bottom: 30px;
+   }
+   &__forgot-link,
+   &__register-link{
+      color: inherit;
+   }
+   &__register-link{
+      display: block;
+      text-align: center;
+   }
+   &__create-btn{
+      padding: 20px 0;
+      width: 100%;
+      font-size: 18px;
+      line-height: 28px;
+      color: $subtitle;
+      background-color: transparent;
+      border: 2px solid #a3bbc8;
+      margin-top: 22px;
+   }
+}
 
+.partners-block{
+   &__inner{
+      background-color: #fef7f0;
+      width: 100%;
+      padding: 75px 0 80px;
+   }
+   &__list{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+   }
+}
 
+ 
 
 
 
