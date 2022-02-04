@@ -64,7 +64,17 @@ $bg:#fef7f0;
    border: 1px solid #b3b7b5;
    color: $accent;
    border-radius: 5px;
- }
+}
+
+%checkbox-hidden{
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+   clip: rect(0 0 0 0);
+   position: absolute;
+}
+
+
 
 @function max($numbers...){
     @return m#{a}x(#{$numbers});
