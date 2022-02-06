@@ -9,6 +9,7 @@ body{
    flex-direction: column;
    font-size: 16px;
    line-height: 30px;
+   @extend %rubik-400;
 }
 
 .main{
@@ -27,10 +28,43 @@ body{
    margin: 0 auto;
 }
 
+.none{
+   display: none;
+}
+
 .title{
    color: $title;
    @extend %dmsans-700;
    font-size: 36px;
    line-height: 44px;
    text-align: center;
- }
+}
+.title--other{
+   color: $subtitle;
+}
+
+.pagination{
+   &__list{
+      display: flex;
+      justify-content: center;
+   }
+   &__item{
+      color: $subtitle;
+      padding: 6px 15px;
+      border: 1px solid #a3bbc8;
+   }
+   &__item + .pagination__item{
+      margin-left: 10px;
+   }
+   &__item--active{
+      background-color: #a3bbc8;
+      color: #fff;
+   }
+   &__link{
+      color: inherit;
+   }
+   &__button{
+      background-color: transparent;
+      color: inherit;
+   }
+}
