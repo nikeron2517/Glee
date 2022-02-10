@@ -1822,11 +1822,79 @@
    }
 }
 
+.blog{
+   padding: 120px 0;
+   &__inner{
+      display: flex;
+   }
+   &__aside{
+      max-width: 270px;
+   }
+   .filter__title{
+      color: $subtitle;
+   }
+   .filter-category__text{
+      color: $subtitle;
+   }
+}
 
 
+.filter-search{
+   margin-bottom: 56px;
+   &__input{
+      border: 2px solid #eef2f5;
+      border-radius: 5px 0 0 5px;
+      border-right: none;
+      padding: 0 15px;
+      height: 43px;
+      width: 226px;
+   }
+   &__btn{
+      margin-left: -7px;
+      background-color: #eef2f5;
+      border-radius: 5px;
+      padding: 13px 15px;
+      transform: translateY(3px);
+   }
+}
 
 
-
+.blog-recent{
+   &__item{
+      display: flex;
+      margin-bottom: 22px;
+   }
+   &__img{
+      width: 70px;
+      height: 70px;
+   }
+   &__content{
+      margin-left: 18px;
+   }
+   &__title{
+      font-size: 14px;
+      line-height: 20px;
+      color: #333;
+   }
+   &__data{
+      color: #b5b5b5;
+      font-size: 12px;
+      text-transform: uppercase;
+      padding-left: 19px;
+      position: relative;
+      &::before{
+         content: '';
+         background-image: url(../images/icons/calendar.svg);
+         position: absolute;
+         left: 0;
+         bottom: 2px;
+         background-repeat: no-repeat;
+         background-position: center;
+         width: 12px;
+         height: 13px;
+      }
+   }
+}
 
 
 
