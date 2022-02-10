@@ -12,6 +12,7 @@
     "@fancyapps/fancybox": "^3.5.7",
     "browser-sync": "^2.27.7",
     "del": "^6.0.0",
+    "form": "^0.2.4",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-concat": "^2.6.1",
@@ -25,6 +26,10 @@
     "sass": "^1.49.0",
     "slick": "^1.12.2",
     "slick-carousel": "^1.8.1",
+    "styler": "^0.0.15",
     "uninstall": "^0.0.0"
+  },
+  "dependencies": {
+    "jquery-form-styler": "^2.0.2"
   }
 }
