@@ -1836,6 +1836,83 @@
    .filter-category__text{
       color: $subtitle;
    }
+   &__content{
+      max-width: 830px;
+      width: 100%;
+      margin-right: 70px;
+   }
+   &__content-item{
+      padding-bottom: 50px;
+   }
+   &__content-box{
+      margin-bottom: 36px;
+      position: relative;
+   }
+   &__content-img{
+      max-height: 500px;
+      height: 100%;
+   }
+   &__content-info{
+      color: #fff;
+      background-color: #a3bbcc;
+      padding: 28px 28px 28px 40px;
+      position: absolute;
+      bottom: 0;
+   }
+   &__content-date{
+      margin-right: 35px;
+      position: relative;
+   }
+   &__content-author{
+      position: relative;
+   }
+   &__content-date::before{
+      content: '';
+      background: url(../images/icons/calendar-blog.svg);
+      position: absolute;
+      left: -18px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 12px;
+      height: 13px;
+   }
+   
+   &__content-author::after{
+      content: '';
+      background: url(../images/icons/user.svg);
+      position: absolute;
+      left: -18px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 11px;
+      height: 13px;
+   }
+   &__content-title{
+     font-size: 36px;
+     line-height: 44px;
+     color: #333;
+     margin-bottom: 35px;
+   }
+   &__content-text{
+      max-width: 800px;
+      width: 100%;
+      color: $subtitle;
+      margin-bottom: 30px;
+   }
+   &__content-btn{
+      @extend %btn;
+      display: flex;
+      border-radius: 0;
+      border: 1px solid #a3bbc8;
+      color: #a3bbc8;
+   }
+   &__content-arrow{
+      margin-left: auto;
+   }
+   .pagination__list{
+      justify-content: flex-start;
+      margin-top: 27px;
+   }
 }
 
 
