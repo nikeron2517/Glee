@@ -1,0 +1,62 @@
+.design {
+   &__title {
+      margin-bottom: 25px;
+   }
+
+   &__filter-list {
+      @extend %dmsans-700;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 70px;
+   }
+
+   &__btn+.design__btn {
+      margin-left: 25px;
+   }
+
+   &__btn {
+      color: #8b8b8b;
+      background-color: transparent;
+   }
+
+   .mixitup-control-active {
+      color: $title;
+   }
+
+   &__all {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 35px;
+      margin-bottom: 185px;
+   }
+
+   &__all-item {
+      width: 370px;
+      height: 250px;
+      border-radius: 10px;
+      padding: 40px 0 35px 32px;
+   }
+
+   &__all-img {
+      max-width: 270px;
+      width: 100%;
+      max-height: 185px;
+   }
+
+   &__all-content {
+      max-width: 173px;
+   }
+
+   &__all-title {
+      @extend %dmsans-700;
+      color: #191919;
+      font-size: 20px;
+      line-height: 24px;
+   }
+
+   &__all-type {
+      margin-bottom: 35px;
+      @extend %dmsans-700;
+      color: #a3bbc8;
+   }
+}

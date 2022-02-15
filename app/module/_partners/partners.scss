@@ -1,0 +1,13 @@
+.partners-block {
+   &__inner {
+      background-color: #fef7f0;
+      width: 100%;
+      padding: 75px 0 80px;
+   }
+
+   &__list {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+   }
+}
