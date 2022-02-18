@@ -1,0 +1,29 @@
+.terms {
+   padding-top: 115px;
+
+   &__inner {
+      @extend %rubik-400;
+      color: $subtitle;
+   }
+
+   &__title {
+      @extend %rubik-500;
+      font-size: 24px;
+      line-height: 40px;
+      margin-bottom: 25px;
+   }
+
+   &__list {
+      margin-left: 30px;
+      margin-bottom: 65px;
+      list-style: decimal-leading-zero;
+   }
+
+   &__item+.terms__item {
+      margin-top: 25px;
+   }
+
+   &__text {
+      margin-bottom: 60px;
+   }
+}
